@@ -1,0 +1,1347 @@
+package myfirstjavapgm;
+
+public class hello
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello anna,Teach me java");
+
+	}
+
+}
+  
+OUTPUT
+Hello anna,Teach me java
+ 
+package Add;
+
+public class additionof2nos
+{
+	public static void main(String[] args) {
+		int a,b,c;
+		a=20;
+		b=10;
+		c=a/b;
+		System.out.println("value of c :"+c);
+
+	}
+
+}
+OUTPUT
+value of c :2
+package myfirstjavapgm;
+
+public class LCtoUCuserinput {
+
+		public static void main(String[] args) {
+		String FN="kalpana";
+		String LN="sha";
+		System.out.println(FN+""+LN);
+		}
+
+}
+OUTPUT
+Kalpanasha
+package myfirstjavapgm;
+public class ValuesNotequal {
+
+	public static void main(String[] args) {
+		int a,b;
+		a=200;
+		b=200;
+		if(a!=b){
+			
+			System.out.println(a!=b); 
+		}
+		else
+		{
+			System.out.println(a==b);
+		}
+		}
+}
+
+OUTPUT
+True
+package AOof2nos;
+
+public class FNLNInitials {
+	public static void main(String[] args) {
+		String Fname = "Kalpana";
+        String initials1 = Fname.substring(0, 1); 
+        String Lname = "Sha";
+        String initials2 = Lname.substring(0, 1);
+        System.out.println ("Initials Are " + Fname+Lname);
+        System.out.println ("Initials Are " + initials1+initials2);
+
+	}
+
+}
+
+OUTPUT
+Initials Are KalpanaSha
+Initials Are KS
+
+package Addition;
+
+public class FNLNInitials1 {
+	public static void main(String[] args)
+	{
+		String name ="Kalpana Narayanaswamy Shanmugasundaram";
+		String nameParts[] = name.split(" ");
+		char firstInitial = nameParts[0].charAt(0);
+		char middleInitial = nameParts[1].charAt(0);
+		char lastInitial = nameParts[2].charAt(0);
+		System.out.println ("Initials Are " + firstInitial + middleInitial + lastInitial);
+	}
+
+}
+
+OUTPUT
+Initials Are KNS
+package AOof2nos;
+
+public class Arithmeticoperations {
+
+	public static void main(String[] args) {
+		int a,b;
+		a=2000;
+		b=200;
+		int sum=a+b;
+		int sub=a-b;
+		int mult=a*b;
+		int div=a%b;
+		System.out.println("Value of a is "+a);
+		System.out.println("Value of b is "+b);
+		System.out.println("addition is "+ sum);
+		System.out.println("Subtraction is "+sub);
+		System.out.println("Product is "+mult);
+		System.out.println("Division is "+div);
+	}
+}
+	
+OUTPUT
+Value of a is 2000
+Value of b is 200
+addition is 2200
+Subtraction is 1800
+Product is 400000
+Division is 0
+package AOof2nos;
+
+import java.util.Scanner;
+
+public class Arithmetic1
+{
+	public static void main(String[] args) {
+		float a,b;
+		System.out.println("Enter values of a,b:");
+		Scanner kalp = new Scanner(System.in);
+		a=kalp.nextFloat();
+		b=kalp.nextFloat();
+		float sum=a+b;
+		float sub=a-b;
+		float mult=a*b;
+		float div=a/b;
+		System.out.println("Value of a is "+a);
+		System.out.println("Value of b is "+b);
+		System.out.println("addition is "+ sum);
+		System.out.println("Subtraction is "+sub);
+		System.out.println("Product is "+mult);
+		System.out.println("Division is "+div);
+
+	}
+
+}
+
+OUTPUT
+Enter values of a,b:
+10.1
+15.3
+Value of a is 10.1
+Value of b is 15.3
+addition is 25.400002
+Subtraction is -5.2
+Product is 154.53001
+Division is 0.66013074
+
+package Jan18;
+
+public class variable {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int i;
+		i=12;
+		System.out.println(i);
+		i=20;
+		System.out.println(i);
+	}
+
+}
+
+OUTPUT
+12
+20
+package Jan18;
+
+public class Constant {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		final int AccNo=123456;
+		System.out.println(AccNo);
+		}
+
+}
+package Jan18;
+
+public class ticketdiscount {
+	public static void main(String[] args) {
+		int age=60;
+		if(age<=3)
+		{
+			System.out.println("U r  child no need to take ticket");
+		}
+		else if(age>=4 && age<=10)
+		{
+			System.out.println("Half ticket");
+		}
+		else if(age>=11 && age<60)
+		{
+			System.out.println("Full ticket");
+		}
+		else if(age >=60)
+		{
+			System.out.println("Senior citizen,provide 10% discount");
+		}
+	}
+
+}
+
+OUTPUT
+Senior citizen,provide 10% discount
+package Jan18;
+
+public class evenodd {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+			System.out.println("Program starts");
+			int i=6;
+			if(i%2 ==0)
+			{
+				System.out.println("Even no");
+			}
+			else
+			{
+				System.out.println("Odd no");
+			}
+			System.out.println("Program ends");
+		}
+	}
+
+OUTPUT
+Program starts
+Even no
+Program ends
+
+package Jan18;
+
+public class max2nos {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int num1=20;
+		int num2=30;
+		if(num1 > num2)
+		{
+			System.out.println(num1+" is greater than "+num2);
+		}
+		else
+		{
+			System.out.println(num2+" is greater than "+num1);
+		}
+
+	}
+
+}
+
+OUTPUT
+30 is greater than 20
+package Jan18;
+
+public class swap {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int a,b,c;
+		a=10;
+		b=20;
+		System.out.println("Before swap");
+		System.out.println(a);
+		System.out.println(b);
+		c=b;
+		b=a;
+		a=c;
+		System.out.println("After swap");
+		System.out.println(a);
+		System.out.println(b);
+		
+	}
+
+}
+
+OUTPUT
+Before swap
+10
+20
+After swap
+20
+10
+
+package Jan18;
+
+public class Swapwithout3variable {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int a,b;
+		a=10;
+		b=20;
+		System.out.println("Before swap");
+		System.out.println(a);
+		System.out.println(b);
+		a=a+b;
+		b=a-b;
+		a=a-b;
+		System.out.println("After swap");
+		System.out.println(a);
+		System.out.println(b);
+		
+	}
+
+}
+OUTPUT
+Before swap
+10
+20
+After swap
+20
+10
+package Jan18;
+
+public class Grademarks {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int grade;
+		grade=49;
+		if(grade>=90)
+		{
+			System.out.println("Distinction,Grade A");
+		}
+		else if(grade>=70 && grade <90)
+		{
+			System.out.println("Pass,Grade B");
+		}	
+		else if(grade>=41 && grade <70)
+		{
+			System.out.println("Pass,Grade C");
+		}
+		else if(grade<=40)
+		{
+			System.out.println("FAIL");
+		}
+	}
+
+}
+
+OUTPUT
+Pass,Grade C
+package Jan18;
+
+public class Display1to10 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		System.out.println("Program starts");
+		for(int i=1;i<=10;i++)
+		{
+			System.out.println(i);
+		}
+		
+		System.out.println("Program ends");
+	}
+
+}
+
+OUTPUT
+Program starts
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Program ends
+
+package Jan18;
+
+public class oddnos {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		System.out.println("program starts");
+		for(int i=1;i<=25;i=i+2)
+		{
+			System.out.println(i);
+			if(i==21)
+			{
+				break;
+			}
+		}
+		System.out.println("program ends");
+	}
+
+}
+program starts
+1
+3
+5
+7
+9
+11
+13
+15
+17
+19
+21
+program ends
+
+package Jan18;
+
+public class methodmultiply {
+
+	public static void main(String[] args) {
+		System.out.println("program starts");
+		int res=product(20,30);
+		System.out.println("product of 2 nos "+res);
+		System.out.println("program ends");
+	}
+	public static int product(int a,int b)
+{
+		int c=a*b;
+	    return c;
+}
+	
+}
+
+OUTPUT
+program starts
+product of 2 nos 600
+program ends
+package Jan18;
+
+public class Factorial {
+	public static void main(String[] args) {
+		System.out.println("PS");
+		int result=factor(5);
+		System.out.println(result);
+		System.out.println("PE");
+	}
+	public static int factor(int f)
+	{
+		f=1;
+		for (int i=1;i<=5;i++)
+		{
+			f=f*i;
+			}
+		return f;
+	}
+
+}
+
+OUTPUT
+PS
+120
+PE
+package Jan18;
+
+public class Simpleinterest {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		System.out.println("program starts");
+		int num1=10;
+		int num2=20;
+		int num3=30;
+		int res= SI(num1,num2,num3);
+		System.out.println(res);
+		System.out.println("program ends");
+			}
+public static int SI(int p,int n,int r)
+{
+    int s=(p*n*r)/100;
+	return s;
+}
+}
+
+OUTPUT
+program starts
+60
+program ends
+package Jan18;
+
+public class Areaofcircle {
+	static int r=100;
+	public static void main(String[] args) {
+		double area=Math.PI*r*r;
+		System.out.println("Area of circle :"+area);
+	}
+
+}
+
+OUTPUT
+Area of circle :31415.926535897932
+package Jan18;
+
+public class evenno {
+	public static void main(String[] args){
+	System.out.println("Program starts");
+	int i=6;
+	if(i%2 ==0)
+	{
+		System.out.println("Even no");
+	}
+	else
+	{
+		System.out.println("Odd no");
+	}
+	System.out.println("Program ends");
+	}
+}
+}
+package Jan18;
+
+public class methodevenno {
+	
+	public static void main(String[] args) {
+		System.out.println("PS");
+		int num=25;
+		Boolean result=evenno(num);
+				if (result==true)
+		{
+			System.out.println("Even No");
+		}
+		else
+		{
+			System.out.println("Odd No");
+		}
+		System.out.println("PE");
+	}
+	public static Boolean evenno(int num)
+	{
+		int n=(num%2);
+		if(n==0)
+	    {
+		return true;
+	    }
+		else
+		{
+		return false;
+		}
+}
+}
+	OUTPUT
+PS
+Odd No
+PE
+package Jan18;
+
+public class Exlocalvariables {
+		public static void main(String[] args) {
+		int i=50;
+		System.out.println(i);
+		test(10);
+		System.out.println(i);
+		}
+static void test(int j)
+	{
+	j=200;
+	System.out.println(j);
+	}
+}
+
+OUTPUT
+50
+200
+50
+package Jan20;
+
+public class Globallocal {
+	//static int i=10;
+	public static void main(String[] args) {
+		int i=20;
+		System.out.println(i);
+		test();
+		System.out.println(i);
+        
+	}
+static void test()
+{
+	int i=30;
+	System.out.println(i);
+}
+}
+OUTPUT
+20
+30
+20
+
+package Jan20;
+
+public class Globallocal1 {
+	static int i=50;
+	static int j=20;
+	public static void main(String[] args) {
+		System.out.println(i);
+		System.out.println(j);
+		int i=90;
+		//int j=80;
+		System.out.println(i);
+		System.out.println(j);
+		test();
+		System.out.println(i);
+		System.out.println(j);
+	}
+	static int test()
+	{
+		System.out.println(i);
+		i=100;
+		j=10;
+		return j;
+	}
+
+}
+
+OUTPUT
+50
+20
+90
+20
+50
+90
+10
+package Jan20;
+
+public class globallocal2 {
+	static int i;
+	static boolean j;
+	static char c;
+	static double d;
+	public static void main(String[] args) {
+		System.out.println("PS");
+		System.out.println(i);
+		System.out.println(j);
+		System.out.println(c);
+		System.out.println(d);
+		System.out.println("PE");
+	}
+
+}
+OUTPUT
+PS
+0
+false
+_
+package Jan20;
+
+public class globallocal3 {
+static int i=20;
+int j=10;
+	public static void main(String[] args) {
+		System.out.println(i);
+		System.out.println(globallocal3.i);
+		globallocal3 GL=new globallocal3();
+		System.out.println(GL.j);
+
+	}
+
+}
+
+OUTPUT
+20
+20
+10
+package Jan20;
+
+public class globallocal4 {
+int speed=6;
+static int mileage=15;
+	public static void main(String[] args) {
+		System.out.println(globallocal4.mileage);
+		globallocal4 gl=new globallocal4();
+		System.out.println(gl.speed);
+	}
+
+}
+
+OUTPUT
+15
+6
+
+package Jan20;
+
+public class Globalvariable {
+	static int b=20;
+		public static void main(String[]args){
+			System.out.println(b);
+			int b=50;
+			System.out.println(b);
+			test();
+			System.out.println(b);
+		}
+		static void test()
+		{
+			int b=100;
+			System.out.println(b);
+		}
+	
+
+}
+
+OUTPUT
+20
+50
+100
+50
+package Jan20;
+
+public class Globalvariable1 {
+	static int i=50;
+	static int j=20;
+	public static void main(String[] args) {
+		System.out.println(i);
+		System.out.println(j);
+        int j=90;
+        System.out.println(i);
+        test();
+        System.out.println(i);
+		System.out.println(j);
+	}
+static int test()
+{
+	System.out.println(i);
+	System.out.println(j);
+	i=100;
+	j=5;
+	System.out.println(i);
+	System.out.println(j);
+	return i;
+}
+}
+
+OUTPUT
+50
+20
+50
+50
+20
+100
+5
+100
+90
+
+package Jan20;
+
+public class Globalvarstaticnonstatic {
+  int speed =60;
+  static int mileage=15;
+	public static void main(String[] args) {
+		System.out.println("PS");
+		System.out.println(Globalvarstaticnonstatic.mileage);
+		Globalvarstaticnonstatic c;// declaration and initialization in 2 lines
+		c= new Globalvarstaticnonstatic();
+		System.out.println(c.speed);
+		System.out.println("PE");
+	}
+
+}
+
+OUTPUT
+PS
+15
+60
+PE
+package Jan20;
+
+public class calculator {
+	static int a=2;
+	static int b=4;
+	public static void main(String[] args) {
+		System.out.println("PS");
+		System.out.println(a);
+		System.out.println(b);
+		int num1=10;
+		int num2=5;
+		Add(a,b);
+		Sub(a,b);
+		calculator di=new calculator();
+		System.out.println("value of divisionis: :"+di.Div(num1,num2));
+		System.out.println("value of Product is :"+di.Mult(12,2));
+		Rem(a,b);
+		System.out.println("PE");
+	}
+	static void Add(int a,int b)
+	{
+		int c=a+b;
+		System.out.println("value of addition is : "+c);
+	}
+	static void Sub(int a,int b)
+	{
+		int c=a-b;
+		System.out.println("value of Subtraction is : "+c);
+	}
+	int Mult(int a,int b)
+	{
+		return(a*b);
+	}
+	int Div(int a,int b)
+	{
+		return (a/b);
+	}
+	static void Rem(int a,int b)
+	{
+		int c=a%b;
+		System.out.println("value of Reminder is : "+c);
+	}
+}
+
+OUTPUT
+PS
+2
+4
+value of addition is : 6
+value of Subtraction is : -2
+value of divisionis: :2
+value of Product is :24
+value of Reminder is : 2
+PE
+package Jan20;
+
+public class flower {
+	static int price=100;
+	static Boolean b1=true;
+	public static void main(String[] args) {
+		System.out.println("PS");
+		System.out.println("The Price of one Flower is: "+flower.price);
+		flower f1=new flower();
+		System.out.println("The Price of 2 Flower is: "+f1.newflower(2,100));
+		if (b1==true)
+		{
+			System.out.println("Fragrance is good");
+			}
+		else
+		{
+			System.out.println("Fragrance is bad");
+		}	
+		System.out.println("PE");
+	}
+int newflower(int qty,int p)
+{
+	return (qty*p);
+}
+}
+OUTPUT
+PS
+The Price of one Flower is: 100
+The Price of 2 Flower is: 200
+Fragrance is good
+PE
+package Jan20;
+
+public class flowernonstatic {
+	int price=100;
+	Boolean b1;
+		public static void main(String[] args) {
+		System.out.println("PS");
+		flowernonstatic f1=new flowernonstatic();
+		System.out.println("The Price of one Flower is: "+f1.price);
+		System.out.println("The Price of 2 Flower is: "+f1.newflower(2,100));
+		System.out.println("The Fragrance Flower is: "+f1.fragrance(true));
+		System.out.println("PE");
+	}
+int newflower(int qty,int p)
+{
+	return (qty*p);
+}
+
+Boolean fragrance(boolean b1)
+{
+	if (b1==true)
+	{
+		System.out.println("gud");
+		}
+	else
+	{
+		System.out.println("bad:");
+	}	
+
+	return b1;
+}
+
+}
+
+OUTPUT
+PS
+The Price of one Flower is: 100
+The Price of 2 Flower is: 200
+gud
+The Fragrance Flower is: true
+PE
+package Jan20;
+
+public class reversedno {
+	public static void main(String[] args) {
+		int num=2001;
+		int n=num;
+		int temp=0;
+		int reversednum=0;
+		System.out.println(num+"is a  given number");
+		while(n>0)
+		{
+			temp=n%10;
+			n=n/10;
+			reversednum=temp;
+			
+		}			
+			if(num==reversednum)
+			{
+				System.out.println(num+"is a palindrome number");
+			}
+			else{
+				System.out.println(num+"is NOT a palindrome number");
+			}
+		
+
+	}
+
+}
+
+OUTPUT
+2001 is a  given number
+2001 is NOT a palindrome number
+package Jan20;
+
+public class perimetercircle {
+	public static void main(String[] args) {
+int r=100;
+double PerCircle=2*Math.PI*r;
+System.out.println("Perimeter of circle is:"+PerCircle);
+	}
+
+}
+
+OUTPUT
+Perimeter of circle is:628.3185307179587
+package Jan20;
+
+public class Perimeternonstatic {
+    //int r=100;
+	public static void main(String[] args) {
+		System.out.println("PS");
+		int r=100;
+		Perimeternonstatic PNS=new Perimeternonstatic();
+		System.out.println("Perimeter of circle :"+PNS.pericircle(r));
+		System.out.println("Area of circle :"+PNS.Areacircle(r));
+		System.out.println("PE");
+			}
+double pericircle(int r)
+{
+	double pc=2*Math.PI*r;
+	return pc;
+}
+
+double Areacircle(int r)
+{
+	double AC=Math.PI*r*r;
+	return AC;
+}
+}
+
+OUTPUT
+PS
+Perimeter of circle :628.3185307179587
+Area of circle :31415.926535897932
+PE
+
+package Jan20;
+
+public class Perimeter {
+static int r=100;
+static int l=20;
+static int b=30;
+static int w=5;
+	public static void main(String[] args) {
+		System.out.println("PS");
+		System.out.println("Perimeter of circle is:" +Perimeter.Pericircle(r));
+		System.out.println("Perimeter of circle is:" +Perimeter.Areacircle(r));
+		Arearectangle(l,b);
+		//int w=4;
+		//int l=5;
+		Perimeterrectangle(l, w);
+		System.out.println("PE");
+	}
+		static double Pericircle(int r)
+		{
+		double PC=2*Math.PI*r;
+		return PC;
+		}
+		
+		static double Areacircle(int r)
+		{
+		double Area=Math.PI*r*r;
+		return Area;
+		}
+		static void Arearectangle(int l,int b)
+		{
+		int Ar=l*b;
+		System.out.println("Area of rectangle is:"+Ar);
+		}
+		static void Perimeterrectangle(int l,int w)
+		{
+		int Pr=2*(l+w);
+		System.out.println("Perimeter of rectangle is:"+Pr);
+		}
+}
+
+OUTPUT
+PS
+Perimeter of circle is:628.3185307179587
+Perimeter of circle is:31415.926535897932
+Area of rectangle is:600
+Perimeter of rectangle is:50
+PE
+
+package Jan20;
+
+public class test {
+	public static void main(String[] args) {
+		int n=10;
+		while(n>0)
+		{
+			System.out.println("Tick"+n);
+			n--;
+		}
+
+	}
+
+}
+
+OUTPUT
+Tick10
+Tick9
+Tick8
+Tick7
+Tick6
+Tick5
+Tick4
+Tick3
+Tick2
+Tick1
+package Jan20;
+
+public class Breakdemo {
+	public static void main(String[] args) {
+		for(int i=0;i<5;i++)
+		{
+			System.out.println(i);
+			if(i==3)
+			{
+				break;
+			}
+		}
+	}
+
+}
+
+OUTPUT
+0
+1
+2
+3
+package Jan20;
+
+public class dowhile {
+	public static void main(String[] args) {
+		int i=10;
+		System.out.println("PS");
+		do{
+			System.out.println(i);
+			i++;
+		}while(i<20);
+		
+		System.out.println("PE");
+	}
+
+}
+
+OUTPUT
+PS
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+PE
+
+package Jan20;
+
+public class dowhile {
+	public static void main(String[] args) {
+		int i=10;
+		System.out.println("PS");
+		do{
+			System.out.println(i);
+			i++;
+			if(i%2==0)
+			{
+				continue;
+			}
+			else{
+				i++;
+			}
+		}while(i<50);
+		
+		System.out.println("PE");
+	}
+
+}
+
+OUTPUT
+PS
+10
+12
+14
+16
+18
+20
+22
+24
+26
+28
+30
+32
+34
+36
+38
+40
+42
+44
+46
+48
+PE
+
+package Jan20;
+
+public class dowhile {
+	public static void main(String[] args) {
+		int i=10;
+		System.out.println("PS");
+		do{
+			if(i%2==1)
+			{
+				System.out.println(i);
+				i++;
+			}
+			else{
+				i++;
+			}
+		}while(i<50);
+		
+		System.out.println("PE");
+	}
+
+}
+
+OUTPUT
+PS
+11
+13
+15
+17
+19
+21
+23
+25
+27
+29
+31
+33
+35
+37
+39
+41
+43
+45
+47
+49
+PE
+
+package Jan20;
+
+public class switchcase {
+
+	public static void main(String[] args) {
+		float testscore=50.1f;
+		char grade;
+		if(testscore>=90)
+		{
+			grade='A';
+			System.out.println("Grade = "+grade);
+		}
+		else if(testscore>=75 && testscore<90)
+		{
+			grade='B';
+			System.out.println("Grade = "+grade);
+			
+		}
+		else if(testscore>=50 && testscore<75)
+		{
+			grade='B';
+			System.out.println("Grade = "+grade);
+			
+		}
+		else
+		{
+			grade='F';
+			System.out.println("Grade = "+grade);
+			
+		}
+	}
+
+}
+
+OUTPUT
+Grade = B
+package Jan20;
+
+public class Switch {
+	public static void main(String[] args) {
+		int mon=1;
+		String monstr;
+		switch(mon){
+		case 1:monstr="Jan";
+		break;
+		case 2:monstr="Feb";
+		break;
+		case 3:monstr="March";
+		break;
+		case 4:monstr="April";
+		break;
+		case 5:monstr="May";
+		break;
+		case 6:monstr="June";
+		break;
+		case 7:monstr="July";
+		break;
+		case 8:monstr="August";
+		break;
+		case 9:monstr="Sep";
+		break;
+		case 10:monstr="Oct";
+		break;
+		case 11:monstr="Nov";
+		break;
+		case 12:monstr="Dec";
+		break;
+		default:monstr="Invalid month";
+		break;
+		}
+		System.out.println("Month is "+monstr);
+	}
+
+}
+
+OUTPUT
+Month is Jan
+package Jan20;
+
+public class forloop {
+	public static void main(String[] args) {
+		for(int i=10;i>0;i--)
+		{
+			System.out.println("Tick "+i);
+			
+		}
+	}
+
+}
+
+OUTPUT:
+Tick 10
+Tick 9
+Tick 8
+Tick 7
+Tick 6
+Tick 5
+Tick 4
+Tick 3
+Tick 2
+Tick 1
+
+package Jan20;
+
+public class whileloop {
+	public static void main(String[] args) {
+		int i=20;
+		while(i>10)
+			{
+			System.out.println("Tick "+i);
+			i--;
+			}
+	}
+
+}
+
+OUTPUT
+Tick 20
+Tick 19
+Tick 18
+Tick 17
+Tick 16
+Tick 15
+Tick 14
+Tick 13
+Tick 12
+Tick 11
+
